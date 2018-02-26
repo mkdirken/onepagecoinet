@@ -27,15 +27,31 @@ function language(){
     if(dil=="tr"){
         document.getElementById("aktif_dil").src="images/icon/tr.png";
         document.getElementById("dil_kodu").innerText="TR";
-      jQuery.each(language_tr, function(i, val) {
-         document.getElementById(i).innerText=val;
+         jQuery.each(language_tr, function(i, val) {
+             if(i!="mail"){
+                 document.getElementById(i).innerText=val;
+             }
+
         });
+
+         // PLACEHOLDER
+        document.getElementsByName('isim')[0].placeholder=language_tr.mail.isim;
+         document.getElementsByName('email')[0].placeholder=language_tr.mail.email_adres;
+         document.getElementsByName('konu')[0].placeholder=language_tr.mail.mesaj_konusu;
+         document.getElementsByName('mesaj')[0].placeholder=language_tr.mail.mesaj;
     }else{
         document.getElementById("aktif_dil").src="images/icon/en.png";
         document.getElementById("dil_kodu").innerText="EN";
          jQuery.each(language_en, function(i, val) {
-         document.getElementById(i).innerText=val;
+            if(i!="mail"){
+                 document.getElementById(i).innerText=val;
+             }
         });
+         // PLACEHOLDER
+        document.getElementsByName('isim')[0].placeholder=language_en.mail.isim;
+         document.getElementsByName('email')[0].placeholder=language_en.mail.email_adres;
+         document.getElementsByName('konu')[0].placeholder=language_en.mail.mesaj_konusu;
+         document.getElementsByName('mesaj')[0].placeholder=language_en.mail.mesaj;
     }
 }
 function language_change(dil) {
@@ -43,6 +59,7 @@ function language_change(dil) {
     language();
 
 }
+
 
 $(function () {
     language();
