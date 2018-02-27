@@ -24,6 +24,9 @@ var language_tr={
     //PROJE
         proje_baslik:"Projelerimiz",
         proje_icerik:"PROJE İÇERİKLERİ",
+
+        proje1_baslik:"BİTFİNDEX",
+        proje1_icerik:"TR İÇERİK",
     //PROJE SON
 
     // MAİL
@@ -75,6 +78,9 @@ var language_en={
     //PROJELER
         proje_baslik:"Projects",
         proje_icerik:"ABOUT PROJECTS....",
+
+         proje1_baslik:"BİTFİNDEX",
+        proje1_icerik:"EN İÇERİK",
     //PROJE SON
 
      // MAİL
