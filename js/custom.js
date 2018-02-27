@@ -60,11 +60,45 @@ function language_change(dil) {
 
 }
 
+function iletisim_formu(){
+    var data=$("#contact-form").serialize();
+    $.ajax({
+        data:data,
+        url:"php/mail.php",
+        type:"POST",
+        success:function (cevap) {
+
+                dil=getCookie("dil");
+                if(dil=="en"){
+                    if(cevap=="0"){
+                          swal(language_en.mail.hatali_giris, "", "error"); // EN HATALI MESAJ
+                    }else if(cevap=="OK"){
+                        swal(language_en.mail.basarili_mail_mesaji, "", "success"); // EN BAŞARILI MESAJ
+                         document.getElementById("buton").disabled = true; // Mesaj gönderildiğinde butonu kapatıyorum
+                    }else{
+                         swal(cevap, "", "info"); // EN SSİTEM HATALI MESAJ
+                    }
+                }else{
+                     if(cevap=="0"){
+                        swal(language_tr.mail.hatali_giris, "", "error"); // TR HATALI MESAJ
+                    }else if(cevap=="OK"){
+                      swal(language_tr.mail.basarili_mail_mesaji, "", "success"); // TR BAŞARILI MESAJ
+                      document.getElementById("buton").disabled = true; // Mesaj gönderildiğinde butonu kapatıyorum
+                    }else{
+                       swal(cevap, "", "info"); // TR SİSTEM MESAJ
+                    }
+                }
+
+        },error:function (ex) {
+            alert("ERROR");
+        }
+    });
+}
 
 $(function () {
     language();
-    slider();
-})
+
+});
 
 
 function slider(){

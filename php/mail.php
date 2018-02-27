@@ -1,22 +1,37 @@
 <?php
-    if($_POST){
+function GetIP(){
+     if(getenv("HTTP_CLIENT_IP")) {
+     $ip = getenv("HTTP_CLIENT_IP");
+     } elseif(getenv("HTTP_X_FORWARDED_FOR")) {
+     $ip = getenv("HTTP_X_FORWARDED_FOR");
+     if (strstr($ip, ',')) {
+     $tmp = explode (',', $ip);
+     $ip = trim($tmp[0]);
+     }
+     } else {
+     $ip = getenv("REMOTE_ADDR");
+     }
+     return $ip;
+}
+    if(!$_POST){
         die("404");
     }else{
 
         $isim=trim($_POST["isim"]);
         $mesaj=trim($_POST["mesaj"]);
-        $konu=trim($_POST["konu"];
-        $eposta=trim($_POST["eposta"]);
+        $konu=trim($_POST["konu"]);
+        $eposta=trim($_POST["email"]);
 
         ## kontrol edelim
         if($isim=="" || $mesaj=="" || $konu=="" || $eposta==""){
             echo "0";
         }else{
 
-            $hangi_epostaya="mkdirken@gmail.com";
-            $hosting_giden_sunucu_adresi="mail.anadolufarmizmir.com";
-            $hosting_eposta="bilisim@anadolufarmizmir.com";
-            $hosting_eposta_sifre="ufuk008431";
+            $hangi_epostaya="";
+            $hosting_giden_sunucu_adresi="mail.siteadresi.com";
+            $hosting_eposta="";
+            $hosting_eposta_sifre="";
+            $ip_adresi=GetIP();
             ## PHP MAİLLER İÇİN DOSYALARI DAHİL EDELİM
 
             include("phpmailer/class.phpmailer.php");
@@ -36,7 +51,7 @@
                 $mail->AddAddress($hangi_epostaya,$isim);
                 $mail->CharSet = 'UTF-8';
                 $mail->Subject = $konu;
-                $content = "<h2 align='center'>".$eposta."</h2>"."<div align='center'>".$mesaj."</div>";
+                $content = "<h2 align='center'>".$eposta."</h2>"."<h5 align='center'>".$ip_adresi."</h5>"."<div align='center'>".$mesaj."</div>";
                 $mail->MsgHTML($content);
                 if($mail->Send()) {
                     // e-posta başarılı ile gönderildi

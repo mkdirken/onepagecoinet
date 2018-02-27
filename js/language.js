@@ -36,12 +36,16 @@ var language_tr={
     acik_adres:"Açık adres",
     ornek_mail:"örnek_mail@örnek.com",
     ornek_mail1:"örnek@mail.com",
+
     mail:{
         isim:"Adınız:",
         email_adres:"E-mail adresiniz:",
         mesaj_konusu:"Mesaj konusu:",
         mesaj:"Mesajınız:",
+        basarili_mail_mesaji:"Mailiniz Gönderilmiştir.",
+        hatali_giris:"Lütfen İstenilen Bilgileri Doğru Bir Şekilde Doldurunuz!",
     }
+
 
     // SON MAİL
 }
@@ -83,11 +87,14 @@ var language_en={
     acik_adres:"Adress Information",
     ornek_mail:"example_mail@example.com",
     ornek_mail1:"example@mail.com",
+
     mail:{
         isim:"Your name",
         email_adres:"E-mail address",
         mesaj_konusu:"Message topic",
         mesaj:"Your message",
+        basarili_mail_mesaji:"Successfull",
+        hatali_giris:"Please! fill in the correct information",
     }
     // SON MAİL
 
