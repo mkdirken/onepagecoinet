@@ -29,7 +29,7 @@ function language(){
         document.getElementById("dil_kodu").innerText="TR";
          jQuery.each(language_tr, function(i, val) {
              if(i!="mail"){
-                 document.getElementById(i).innerText=val;
+                 document.getElementById(i).innerHTML=val;
              }
 
         });
@@ -44,7 +44,7 @@ function language(){
         document.getElementById("dil_kodu").innerText="EN";
          jQuery.each(language_en, function(i, val) {
             if(i!="mail"){
-                 document.getElementById(i).innerText=val;
+                 document.getElementById(i).innerHTML=val;
              }
         });
          // PLACEHOLDER
@@ -63,4 +63,15 @@ function language_change(dil) {
 
 $(function () {
     language();
+    slider();
 })
+
+
+function slider(){
+     $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controls:false
+      });
+    });
+}

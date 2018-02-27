@@ -957,3 +957,13 @@ preloader
     margin:0;
 	padding:0;
 }
+.slider_page{
+    position: relative;
+    margin-top: 100px;
+}
+.slider_page img{
+    max-height: 50vh;
+}
+.dil_menu{
+    margin-top: -4px;
+}
