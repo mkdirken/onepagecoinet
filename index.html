@@ -51,7 +51,7 @@
             <!--Logo/-->
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li class="dropdown dil_menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="aktif_dil" src="images/icon/tr.png" alt="Sayfanın Şuanki Dili" class="icon-small"> <span id="dil_kodu">TR</span> </pan> <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a id="navIta" onclick="language_change('tr')"> <img id="imgNavIta" src="images/icon/tr.png" alt="Türkçe" class=" icon-small"> Türkçe</a></li>
@@ -77,8 +77,8 @@
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
-                    <h2>It’s all about Promoting your Business</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis tempora numquam.</p>
+                    <h2 id="tesvik">Bu Alan İşe Teşvik İle İlgili</h2>
+                    <p id="tesvik_icerik">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis tempora numquam.</p>
                     <a href="#" class="button white">Watch video</a>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
@@ -245,13 +245,13 @@
                                 <div class="side-icon">
                                     <img src="images/location-arrow.png" alt="">
                                 </div>
-                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                                <p><strong id="adress">Adres:</strong><a id="acik_adres"> Açık adresiniz </a><br />KAYSERİ/TÜRKİYE</p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
                                     <img src="images/phone-arrow.png" alt="">
                                 </div>
-                                <p><strong>Telephone: </strong>
+                                <p><strong id="telephone">Telefon: </strong>
                                     <a href="callto:8801812726495">+8801812726495</a> <br />
                                     <a href="callto:8801687420471">+8801687420471</a>
                                 </p>
@@ -260,9 +260,9 @@
                                 <div class="side-icon">
                                     <img src="images/mail-arrow.png" alt="">
                                 </div>
-                                <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
-                                    <a href="mailto:youremail@example.com">example@mail.com</a>
+                                <p><strong id="e_mail">E-mail: </strong>
+                                    <a href="mailto:youremail@example.com" id="ornek_mail">mail_adresiniz@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com" id="ornek_mail1">ornek@mail.com</a>
                                 </p>
                             </div>
                         </address>

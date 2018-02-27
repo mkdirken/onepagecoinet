@@ -964,3 +964,6 @@ preloader
 .slider_page img{
     max-height: 50vh;
 }
+.dil_menu{
+    margin-top: -4px;
+}
