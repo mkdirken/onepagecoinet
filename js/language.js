@@ -1,19 +1,22 @@
 var language_tr={
     menu1:"Anasayfa",
-    menu2:"Hakkımızda",
-    menu6:"SSS",
-    menu8:"İletişim",
+    menu2:"Biz Kimiz",
+    menu5:"Projeler",
+    menu8:"Bize Ulaşın",
 
 
-    // SIK SORULAN SORULAR
-    sorular:"SIK SORULAN SORULAR",
-    sorular_paragraf:"açıklamalar",
 
-        // SORULAN SORULAR VE CEVAPLARI
+    // HAKKIMIZDA
+        hakkimizda_baslik:"Biz Kimiz",
+        hakkimizda_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.",
+    // VİZYONUMUZ
+        vizyonumuz_baslik:"Vizyonumuz",
+        vizyonumuz_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem",
+    // MİSYONUMIUZ
+        misyonumuz_baslik:"Misyonumuz",
+        misyonumuz_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem",
 
-        soru1:"Soru1 Başlık",
-        soru1_cevap:"Soru1 Cevap",
-    // SON SIK SORULAN SORULAR
+    // SON HAKKIMIZDA
 
 
     // MAİL
@@ -33,15 +36,22 @@ var language_tr={
 
 var language_en={
     menu1:"Home",
-     menu2:"About",
-    menu6:"FAQ",
-    menu8:"Contact",
-
-    sorular:"ASDASDAS",
-    sorular_paragraf:"description",
+     menu2:"WHO ARE WE",
+    menu5:"Projects",
+    menu8:"Contact us",
 
 
+     // HAKKIMIZDA
+        hakkimizda_baslik:"WHO ARE WE",
+        hakkimizda_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.",
+    // VİZYONUMUZ
+        vizyonumuz_baslik:"our vision",
+        vizyonumuz_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem",
+    // MİSYONUMIUZ
+        misyonumuz_baslik:"Our mission",
+        misyonumuz_icerik:"Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore. Lorem",
 
+    // SON HAKKIMIZDA
 
 
 
