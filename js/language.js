@@ -35,10 +35,7 @@ var language_tr={
     buton:"Gönder",
     adress:"Adres:",
     telephone:"Telefon:",
-    e_mail:"Mail Adresiniz:",
     acik_adres:"Açık adres",
-    ornek_mail:"örnek_mail@örnek.com",
-    ornek_mail1:"örnek@mail.com",
 
     mail:{
         isim:"Adınız:",
@@ -89,10 +86,8 @@ var language_en={
     buton:"Submit",
     adress:"Adress:",
     telephone:"Telephone:",
-    e_mail:"E-Mail:",
     acik_adres:"Adress Information",
-    ornek_mail:"example_mail@example.com",
-    ornek_mail1:"example@mail.com",
+
 
     mail:{
         isim:"Your name",
