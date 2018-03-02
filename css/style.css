@@ -379,9 +379,8 @@ input:-webkit-autofill:focus {
 }
 
 .screen-slider .owl-controls {
-    position: absolute;
-    left: 0;
     top: 100%;
+    text-align: center;
 }
 
 .screen-slider .owl-controls .owl-nav > div {
